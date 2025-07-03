@@ -12,7 +12,7 @@ public class HealthController {
     @GetMapping("/health")
     public Map<String, String> health() {
         return Map.of(
-            "status", "UP",
+            "status", "LIGADO",
             "timestamp", LocalDateTime.now().toString(),
             "service", "Delivery API",
             "javaVersion", System.getProperty("java.version")
